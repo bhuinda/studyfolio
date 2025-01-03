@@ -6,21 +6,20 @@ def clz(n):
     # a := C(2) ~ (e, i) ~ the linear cycle of parity: (e ⟺ i)
     # b := C(2) ~ (+, -) ~ the linear cycle of polarity: (- ⟺ +)
     # c := C(4) ~ (a, b) ~ the square cycle of (e ⟺ i) × (- ⟺ +)
-    # d := C(2) ~ (1, 2) ~ the physical binary: (-i, 2) -> 1; (-i, 1) -> 2
+    # d := C(2) ~ (1, 2) ~ the physical binary: (-i, 2) -> 1, (-i, 1) -> 2
     # e := Z(k) ~ (n, c) ~ the quantity of non-trivial cycles; i.e, the cardinality of steps
-    a = 0; b = 0; c = 0; d = n; e = 0
+    a = 0; b = 0; c = 0; d = n; e = 1
 
     # post-processors
     # ab := (a, b) ~ (x, y) ~ the Euclidian 2-space
     # abd := (a, b, d) ~ (x, y, z) ~ the Euclidian 3-space
-    ab = []; abd = []
+    ab = []; abd = []; x = 0; y = 0
 
     # nth term
     ab.append((n, 0))
 
     # nth - k term
     while True:
-        x = 0; y = 0; 
         if c == 3 and d in (0,1,2): break
         else:
             match a:
@@ -44,7 +43,7 @@ def clz(n):
     for (x, y) in ab: abd.append((x, y, d))
     
     # string terminator
-    abd.append('␢h')
+    abd.append('␢ħ')
     
     return abd, d
 
@@ -65,7 +64,7 @@ z_2 = 0
 # frequency counter
 for abd, d in terms:
     for coord in abd:
-        if coord == '␢h': break
+        if coord == '␢ħ': break
         match coord[2]:
             case 1: z_1 += 1
             case 2: z_2 += 1
@@ -84,5 +83,5 @@ print(f'S(2): {s_2} ~ {s_2 / (s_1 + s_2)}')
 with open("collatz_data/data.dat", "w") as file:
     for abd, _ in terms:
         for coord in abd:
-            if coord == '␢h': file.write("\n")
+            if coord == '␢ħ': file.write("\n")
             else: file.write(f"{coord[0]} {coord[1]} {coord[2]}\n")
