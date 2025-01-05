@@ -13,14 +13,16 @@ def clz(n):
     # post-processors
     # ab := (a, b) ~ (x, y) ~ the Euclidian 2-space
     # abd := (a, b, d) ~ (x, y, z) ~ the Euclidian 3-space
-    ab = []; abd = []; x = 0; y = 0
+    ab = []; abd = []
 
     # nth term
     ab.append((n, 0))
 
     # nth - k term
     while True:
-        if c == 3 and d in (0,1,2): break
+        x = 0; y = 0
+        if c == 3 and d in (0,1,2):
+            break
         else:
             match a:
                 case 0:
@@ -64,7 +66,8 @@ z_2 = 0
 # frequency counter
 for abd, d in terms:
     for coord in abd:
-        if coord == '␢ħ': break
+        if coord == '␢ħ':
+            break
         match coord[2]:
             case 1: z_1 += 1
             case 2: z_2 += 1
