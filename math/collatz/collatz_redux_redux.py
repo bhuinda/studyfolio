@@ -32,8 +32,11 @@ def clz(i):
     clz_i,j,k = i,i%2,i
     x,y,z = 0,0,0
 
+    # rotations
+    r = 1
+
     # moments of inertia (i.e., a variation of action)
-    clz_v = [((x,y,z),(i,j,k))]
+    clz_v = [((x,y,z),(i,j,k,r))]
 
     while not (clz_i in (0, 1, 2) and z == 3):
         m,n   = e_f(clz_i)
@@ -44,7 +47,8 @@ def clz(i):
             case 2: j,k = m,-n
             case 3: j,k = m,-n
         clz_i = n
-        clz_v.append(((x,y,z),(i,j,k)))
+        r += 1
+        clz_v.append(((x,y,z),(i,j,k,r)))
 
     for a,b in clz_v:
         clz_f(clz_i, (a,b))
@@ -85,7 +89,7 @@ def clz_freq():
     return s_1,s_2, z_1,z_2, p_0,p_1
 
 # clz analysis
-n = 250; terms = [clz(i) for i in range(1,n + 1)]
+n = 1000; terms = [clz(i) for i in range(1,n + 1)]
 s_1,s_2, z_1,z_2, p_0,p_1 = clz_freq()
 
 # save data to file
@@ -93,11 +97,12 @@ with open("collatz_data/clz_terms.dat", "w") as file:
     for moment in clz_frame:
         clz_i, coords = moment
         if clz_i == "␢ħ":
-            file.write("\n")
+            continue
+            # file.write("\n")
         else:
             coords_1, coords_2 = coords
             x, y, z = coords_1[0], coords_1[1], coords_1[2]
-            i, j, k = coords_2[0], coords_2[1], coords_2[2]
+            i, j, k, r = coords_2[0], coords_2[1], coords_2[2], coords_2[3]
             # file.write(f"{k if not x else j} {k if x else j} {i}\n")     # "WORMHOLE" 
             # file.write(f"{k if x else j} {k if not x else j} {k}\n")     # "ONE SHURIKEN"
             # file.write(f"{k if x else j} {k if not x else j} {clz_i}\n") # "TWO SHURIKEN"
@@ -106,7 +111,7 @@ with open("collatz_data/clz_terms.dat", "w") as file:
             # file.write(f"{k} {clz_i} {z}\n")                             # "TWO BOWTIE???"
             
             # 2D
-            file.write(f"{k} {z}\n")                             # "TWO BOWTIE"
+            file.write(f"{k if x else j} {k if not x else j} {r}\n")
 
 # clz_i ~ (1,2)
 
