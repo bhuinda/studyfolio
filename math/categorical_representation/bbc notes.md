@@ -1,3 +1,26 @@
+https://en.wikipedia.org/wiki/Diophantine_equation
+https://en.wikipedia.org/wiki/Catalan%27s_conjecture
+
+lol I think I came up with this naturally too
+https://en.wikipedia.org/wiki/Ideal_(ring_theory)#Generalizations
+
+what is dis?
+https://en.wikipedia.org/wiki/Scheme_(mathematics)
+
+https://en.wikipedia.org/wiki/Descent_(mathematics)
+
+8:57 AM
+
+NO WAY I THINK THIS IS WHAT I WAS COOKING HAHAHAHA
+![](https://gyazo.com/b6a67a5d02c28fd6f5b831b63d567dab.png)  
+[https://gyazo.com/b6a67a5d02c28fd6f5b831b63d567dab](https://gyazo.com/b6a67a5d02c28fd6f5b831b63d567dab)
+
+this shit is awesome!! I think it's speaking the language I'm speaking. I know exactly where to dive into now!!!!!
+https://en.wikipedia.org/wiki/Coherent_sheaf_cohomology
+
+9:06 AM 1/10
+Given that I approached sheaf theory so quickly from heuristics alone, I think it's really worth investigating categorical pedagogy and the intuition of binary, rotations, poles, imaginaries, etc.!
+
 One must be a sea, to receive a polluted stream without becoming impure.
 
 does prime number distribution have non-trivial periodicity if conjoining within modulo 2 or 4?
@@ -32,6 +55,8 @@ if the exact same plant structure was simulated to grow with ideal conditions, w
 https://oeis.org/search?q=8%2c6%2c1%2c3%2c5%2c3%2c1%2c1%2c6%2c1%2c4%20id:155184
 https://oeis.org/search?q=8%2c6%2c1%2c3%2c5%2c3%2c1%2c1%2c6%2c1%2c4%20id:153101
 
+https://en.wikipedia.org/wiki/Hurwitz%27s_theorem_(number_theory)
+
 ln(2)/ln(sqrt(5)/2) = ideal log10 representation (log(4)/log(5))
 
 (log(4)/log(5))
@@ -64,8 +89,13 @@ log = 0.06135311614
 ln^e = 0.6665072563
 log^e  = 5.06998076 * 10^-4 
 
-log^pi = 1.55555609 * 10^{-4} = 
+(log(4)/log(5) - 4/5)^pi =
 .00015555230390032097433566806821052903086428969231536388100315756717981104947840812282154854936166236276189556963773805602122583760942001255567200538313457629437955795392178677990183795796968300349494785
+
+log10 diff of 0.001179479...
+
+(log(4)/log(5) - 4/5)^e =
+0.00050699807560388155312510711387257742192394720612019323392563417909682431286542528912710004659053373074779234965820769010324364240436269615537785193308472568848992128061030635369945309746919476345327
 
 sqrt(6)
 
@@ -76,6 +106,8 @@ log(4)/log(5) = ln(2)/ln(sqrt(5)/2)
 
 ![[c6427a07ca4ca2b88b5872f3e7f1d6c9.png]]
 https://www.researchwithrutgers.com/en/publications/semiotic-and-category-theoretical-considerations-of-the-golden-ra
+
+0.03125 = 31/32
 
 1
 
