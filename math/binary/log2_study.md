@@ -1,3 +1,5 @@
+OUTDATED WITH BAD NUMBERS. keeping for posterity :)
+
 (ln(1) + ln(9) + ln(195) + ln(1791) + ln(61681) + ln(1015839)) * sqrt(5) = 89.044051
 
 (ln(1) + ln(9) + ln(195) + ln(1791) + ln(61681) + ln(1015839)) * sqrt(5) + 1 = 90.044051
