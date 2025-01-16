@@ -1,18 +1,35 @@
+y = 90.9554 - 0.663ln(x), approximate up through ζ(4)
+Normalized to 0: (4.22503, 0)
+
+(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(2)/10)
+= 90.4942750803; 90.495... if divisor 10.00 -> 09.99
+
+(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(3)/10)
+= 90.1054262985; 90.099... if divisor 10.00 -> 10.06
+
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(4)/10)
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + 0.10823232)
+= 90.0000109; approximates pi radians
 
 could be related to this?
 https://en.wikipedia.org/wiki/Basel_problem
+
+or
+https://en.wikipedia.org/wiki/Wiener%E2%80%93Ikehara_theorem
 
 reading about Apery's constant, the fact that a Thue-Morse sequence was used to calculate zeta(3) is fascinatingly similar to the process I used.
 what is the significance of manipulating symmetrical binary for zeta(4)?
 
 ln(1.9671824e+17) = 39.8205488461
-...919871824      = from decimal expansion of "5/4 + Pi^2/8 + zeta(3)"
+...919871824      = from decimal expansion of "5/4 + Pi^2/8 + zeta(3)" https://oeis.org/A345204
 
 39.8205488461
-39 8205846893 (square root of 39; on 14th s.f.)
-39 6205443310 (cube root of 91; on 22nd s.f.)
+39 8205846893 (square root of 39; on 14th s.f.) https://oeis.org/A010493
+39 6205443310 (cube root of 91; on 22nd s.f.) https://oeis.org/A010661
+
+sqrt(8205488461 + 8205846893 + 6205443310) = 150388.758436
+                                             150388 86 https://oeis.org/A200634
+                                             "greater of two values of x satisfying 6*x^2 - 1 = tan(x) and 0 < x < Pi/2."
 
 more trivially seeming, the half-integer of mod5 (2.5) has a difference of only 0.072 between its n - 1 and n terms. this is approximately 1/14 (7.142857...). it's hard to put my finger on it, but it seems that through a "natural" rounding function, then adding 2 to the fraction, the symmetry lines up, and 4 -> 5. is this periodic behavior, with a scaling factor of 2 to modulate between sig figs? i noticed this pattern in the approximate integer series of the other natural constants, like the 39... example. Its proximity to 40 implicates how base 10 interacts with a scaling factor 4, or 2 * 2; alternatively, how 10 = 5 * 2, and how that decimal even/prime correspondence encodes irrational numbers?
 
@@ -72,6 +89,8 @@ If ln(1) is changed to ~ ln(1.53343971), it equals 90 without + 1
 
 1.618033988749
 
+ANTIQUATED WORK
+
 (ln(2)/ln(4) + ln(9) + ln(195) + ln(1791) + ln(61681) + ln(1015839)) * sqrt(5)
 is approximately 90.1620849511446
 
@@ -84,7 +103,8 @@ what if the ln series is extended to 12 terms?
 
 In nature, the golden ratio appears because it is an approximation of this error?
 
-Mind that the decimal is not 100% precise; but if the integer representation of i is 90.044051, then it takes 3mod12 full turns (and a nudge!) before the log10 decimal becomes precise enough to use a ceiling function to achieve exactly 1 degree of error (natural degree + 1); otherwise, the floor function remains prevalent. In subtracting 1 to account for this degree of error, what if we are introducing the potential of another module of i?
+
+Mind that the decimal is not 100% precise; but if the integer representation of i is ~ 90, then it takes 3mod12 full turns (and a nudge!) before the log10 decimal becomes precise enough to use a ceiling function to achieve exactly 1 degree of error (natural degree + 1); otherwise, the floor function remains prevalent. In subtracting 1 to account for this degree of error, what if we are introducing the potential of another module of i?
 
 Every function's probability of a zero/non-zero with a set of parameters can be thought of as this:
 
