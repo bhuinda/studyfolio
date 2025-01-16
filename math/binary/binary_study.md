@@ -1,3 +1,6 @@
+(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(4)/10)
+(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + 0.10823232)
+
 could be related to this?
 https://en.wikipedia.org/wiki/Basel_problem
 
