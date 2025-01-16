@@ -1,10 +1,7 @@
 import math
-from collections import Counter
+from primePy import primes
 
 GOLDEN_ANGLE = 90.04145414831363
-PRIMES_100 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-PRIMES_101_200 = [101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199]
-PRIMES_201_300 = [211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293]
 PRIMES_1000 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997]
 
 x_0 = 0.5 # 11 / 00
@@ -25,7 +22,7 @@ def golden_module(n,i):
 
     while r_i < i:
         r_i += 1
-        r_j =~ r_j
+        r_j = ~r_j
         r_k += r_g
     
     return r_k
@@ -40,8 +37,12 @@ def golden_module(n,i):
 # print(golden_module(0,12))
 
 data = []
-for i in range(0, 10000):
-    data.append(golden_module(0,i) % 90)
+formatted_data = []
+for i in range(0, 100):
+    result = (golden_module(0,i) % 90)
+    data.append(result)
+    formatted_result = f"{result:.2f}"
+    formatted_data.append(formatted_result)
 
 def count_digit_frequencies_and_parity(floats):
     # Initialize dictionaries for digit counts and parity counts
@@ -73,6 +74,36 @@ def count_digit_frequencies_and_parity(floats):
 floats = data
 digit_frequencies, even_digit_count, odd_digit_count = count_digit_frequencies_and_parity(floats)
 
+# Process data to create x and y
+x = []
+y = []
+
+prev_first_int = None
+prev_second_int = None
+
+for formatted_result in formatted_data:
+    # Extract the first and second integer places
+    parts = formatted_result.split('.')
+    first_int = int(parts[0][0]) if len(parts[0]) > 0 else 0
+    second_int = int(parts[0][1]) if len(parts[0]) > 1 else 0
+
+    # Determine x and y values
+    if prev_first_int is not None and prev_second_int is not None:
+        x.append(1 if first_int != prev_first_int else 0)
+        y.append(1 if second_int != prev_second_int else 0)
+    else:
+        x.append(first_int)
+        y.append(second_int)
+
+    # Update previous values
+    prev_first_int = first_int
+    prev_second_int = second_int
+
+# The format is: "The mod4 representation of an integer with a (golden-like?) transcendent algorithm (derived from the following decimals)"
+
+formatted_data = ' '.join(formatted_data)
+print(formatted_data)
+print(x,y)
 print("Digit Frequencies:", digit_frequencies)
 print("Even Digits Frequency:", even_digit_count)
 print("Odd Digits Frequency:", odd_digit_count)
