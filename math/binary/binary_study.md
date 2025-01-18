@@ -1,5 +1,6 @@
-y = 90.9554 - 0.663ln(x), approximate up through ζ(4)
-Normalized to 0: (4.22503, 0)
+This is the integer version of pi???
+393436484784067725
+"imagine base 10 without 1"
 
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(2)/10)
 = 90.4942750803; 90.495... if divisor 10.00 -> 09.99
@@ -11,11 +12,30 @@ Normalized to 0: (4.22503, 0)
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + 0.10823232)
 = 90.0000109; approximates pi radians
 
+ARITHMETIC MEAN OF NATURAL LOGARITHMIC DIFFERENCES
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 = 0.05415 ~ 0.0542
+
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672207 = 1.00000000
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672208 = 1.00000001
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672210 = 1.00000002
+
+
+y = 90.9554 - 0.663ln(x), approximate up through ζ(4)
+Normalized to 0: (4.22503, 0)
+
+0.5 * 2 + 2^3 = 9
+0.5 * 2 + 2^3  =
+
+Related to transcendence?
+https://en.wikipedia.org/wiki/Heegner_number#Almost_integers_and_Ramanujan's_constant
+
+
 could be related to this?
 https://en.wikipedia.org/wiki/Basel_problem
 
 or
 https://en.wikipedia.org/wiki/Wiener%E2%80%93Ikehara_theorem
+https://en.wikipedia.org/wiki/Hardy%E2%80%93Littlewood_Tauberian_theorem#Prime_number_theorem
 
 reading about Apery's constant, the fact that a Thue-Morse sequence was used to calculate zeta(3) is fascinatingly similar to the process I used.
 what is the significance of manipulating symmetrical binary for zeta(4)?
@@ -54,7 +74,7 @@ referencing square root here:
 8 decimals required
 
 log(...) * sqrt(5 + 0.108232) = 90.0000109
-on 6th decimal, symmetry breaks
+on 6th zero, symmetry breaks
 
 log(...) * sqrt(5 + 0.10823108) = 90
 almost exactly zeta(4)
