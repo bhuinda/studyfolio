@@ -1,6 +1,49 @@
-This is the integer version of pi???
+This is the integer version of pi nested inside the natural logarithm???
 393436484784067725
 "imagine base 10 without 1"
+
+NATURAL LOG OF THE NUMBER OF "DIMINISHINGS OF THE 600-CELL BY NON-ADJACENT VERTICES"
+19.5656941357
+
+THE SQUARE OF THE ABOVE:
+382.816387012
+
+NATURAL LOG OF THAT:
+5.94755546695, ~5.95
+
+NATURAL LOG OF THE FUCKASS CONSTANT
+39.8205488582
+
+prime factorization:
+2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 * 31 * 241 * 331
+3^9 * 5^2 * 7 * 11 * 13 * 17 * 19 * 31 * 241 * 331
+
+3^(3^2) * 5^2 * 7 * 11 * 13 * 17 * 19 * 31 * 241 * 331
+
+category * sign * 3 + 5 terms
+
+3x ^ 3x^2 + 
+
+connection to https://oeis.org/A144755
+
+
+connection to speed of light?
+300,000,000 - 299,792,458 = 207542
+                            0.0542 = mean of ln()
+
+393436484784067725 =
+01011001011101010000010001111010101100111111000011 (30 + 20)
+
+299792458 =
+010001110111100111100001001010 (30)
+
+50 0s broken into
+30 + 20
+
+from b 010110010111010100000100011110
+
+PI IN base-2
+11.00100 10000 11111 10110 10101 00010 00100 00101 10100 01100 00100 01101 00110 00100 11000 11001 10001 01000 10111 00000
 
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(2)/10)
 = 90.4942750803; 90.495... if divisor 10.00 -> 09.99
@@ -8,17 +51,25 @@ This is the integer version of pi???
 (ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(3)/10)
 = 90.1054262985; 90.099... if divisor 10.00 -> 10.06
 
-(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + ζ(4)/10)
-(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + 0.10823232)
+(ln(0.5)+ ln(9) + ln(195) + ln(3591) + ln(61455) + ln(1015839)) * sqrt(5 + 0.10823232...)
+
+ ln(393436484784067725/2) * sqrt(5 + ζ(4)/10)
 = 90.0000109; approximates pi radians
 
-ARITHMETIC MEAN OF NATURAL LOGARITHMIC DIFFERENCES
-(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 = 0.05415 ~ 0.0542
+takes 10000.0099 rotations for exactly 1 degree of error
 
+ARITHMETIC MEAN OF NATURAL LOGARITHMIC DIFFERENCES
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4              = 0.05415 ~ 0.0542
 (0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672207 = 1.00000000
 (0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672208 = 1.00000001
 (0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.4672210 = 1.00000002
 
+(0.0556 + 0.0462 + 0.0543 + 0.0605)/4 * 18.6521131 = 1.01001192
+                                                     1101001112 https://oeis.org/A005091 (starting on 48th digit, aka 12 * 4)
+
+
+RELATED???
+ln(126040404) = 18.6521131
 
 y = 90.9554 - 0.663ln(x), approximate up through ζ(4)
 Normalized to 0: (4.22503, 0)
