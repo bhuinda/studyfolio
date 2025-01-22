@@ -21,7 +21,7 @@ def g_period(n):
         period = g_product(start, end)
         periods.append(period)
 
-        print(f"π({start} to {end}): {period:.5f}")
+        print(f"π/2 ({start} to {end}): {period:.5f}")
 
     return periods
 
@@ -87,8 +87,8 @@ def plot_box_plot(pi_values):
     plt.show()
 
 def main():
-    periods = 200
-    print("Generating results for π terms...")
+    periods = 300
+    print("Generating results for π/2 terms...")
     pi_values = g_period(periods)
 
     plot_natural_logs(pi_values)

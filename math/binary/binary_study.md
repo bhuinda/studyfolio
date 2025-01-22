@@ -2,6 +2,59 @@ This is the integer version of pi nested inside the natural logarithm???
 393436484784067725
 "imagine base 10 without 1"
 
+SEQUENCE NOTES
+π/2 (0 to 4): 90.00001
+
+9 0 0 0 0 0 1 shows up a shocking amount in very wonky looking integer series. it is definitely not a trivial coincidence
+
+https://oeis.org/A023962 (63 to 69)
+https://oeis.org/A308276 (27 to 33)
+https://oeis.org/A368864 (33 to 39) ***
+https://oeis.org/A061896 (51 to 57) *** super intriguing
+
+       90.00001
+192730 900000.1 (46 to 55, then .)
+
+https://en.wikipedia.org/wiki/Fibonacci_polynomials
+holy christmas tree ("Triangle of coefficients of Lucas polynomials")
+
+2
+1, 0
+1, 1, 0
+1, 2, 0, 0
+1, 3, 0, 0, 0
+1, 4, 2, 0, 0, 0
+1, 5, 5, 0, 0, 0, 0
+1, 6, 9, 2, 0, 0, 0, 0
+1, 7, 14, 7, 0, 0, 0, 0, 0
+1, 8, 20, 16, 2, 0, 0, 0, 0
+1, 9, 27, 30, 9, 0, 0, 0, 0, 0
+1, 10, 35, 50, 25, 2, 0, 0, 0, 0, 0
+1, 11, 44, 77, 55, 11, 0, 0, 0, 0, 0, 0
+1, 12, 54, 112, 105, 36, 2, 0, 0, 0, 0, 0, 0
+1, 13, 65, 156, 182, 91, 13, 0, 0, 0, 0, 0, 0
+1, 14, 77, 210, 294, 196, 49, 2, 0, 0, 0, 0, 0
+1, 15, 90, 275, 450, 378, 140, 15, 0, 0, 0, 0, 0
+1, 16, 104, 352, 660, 672, 336, 64, 2, 0, 0, 0, 0
+1, 17, 119, 442, 935, 1122, 714, 204, 17, 0, 0, 0, 0
+1, 18, 135, 546, 1287, 1782, 1386, 540, 81, 2, 0, 0, 0
+
+π/2 (990 to 994): 3111129990 (decimal omitted)
+                  3111129998 https://oeis.org/A152545
+
+42 3
+43 1
+44 1
+45 1
+46 12
+47 9
+48 9
+49 9
+50 8
+
+
+
+
 1/21/25, 1:09 PM
 CONNECTION TO MERSENNE PRIMES?
 
@@ -9,8 +62,14 @@ CONNECTION TO MERSENNE PRIMES?
 POLYNOMIAL EQUATION
 y = 3.00x^4 - 62.92x^3 + 112.04x^2 - 51.58x + 3.00
 
+NOPE
+
 for ln series * 2
 f(y) = 12376.1417(x)^5 - 119742.625(x)^4 + 410063.042(x)^3 - 577455.375(x)^2 + 274775.817(x) + 1
+
+
+2 ln( (sigma(n=[0,4]) : ( 4 * 4^n - 2^n)^2 - (2^n - 1)^2 ) * 0.5 ) *
+sqrt( 5 + pi^4/900 )
 
 
 4D coordinate series:
@@ -263,11 +322,12 @@ i  =  imod2 (self-destructing dual)
 248  = 0.75 * 330.666 10 10 01 01 0.10... 13
 1008 = 0.75 * 1344.00 10 10 10 00000..... 12
 
-5  -  4 = 1
-9  -  5 = 4
-8  -  7 = 1
-13 -  9 = 4
-12 - 11 = 1
+"n-ary cardinality (decimal) - binary cardinality (no decimal)"
+5  -  4 = 1 0mod4
+9  -  5 = 4 1mod4
+8  -  7 = 1 2mod4
+13 -  9 = 4 3mod4
+12 - 11 = 1 4mod4
 
 5981312
 0981312 https://oeis.org/A252462 (matches 15th to 18th)
@@ -341,12 +401,29 @@ CRITICAL CRITICAL CRITICAL
 3.00x^4 − 62.92x^3 + 112.04x^2 − 51.58x + 3.00
 
 3, 14, 60, 248, 1008
-2.5
-3 * 4 = 12 + 2 = 14
-14 * 4 = 56 + 4 = 60
-60 * 4 = 240 + 8 = 248
-248 
 
+.75 * 4 = 3   +  0 = 3
+3   * 4 = 12  +  2 = 14
+14  * 4 = 56  +  4 = 60
+60  * 4 = 240 +  8 = 248
+248 * 4 = 992 + 16 = 1008
+https://oeis.org/A171499
+
+"a(n) = 6*a(n-1) - 8*a(n-2) for n > 1; a(0) = 3, a(1) = 14."
+SIMPLIFIED: a(n) = 4 * 4^n - 2^n; solved quadratically
+https://en.wikipedia.org/wiki/Vandermonde_matrix ???
+
+ a(n) = 4 * 4^n - 2^n  https://oeis.org/A171499 ~ 0.75 3/4
+ b(n) = (2^n - 1)^2    https://oeis.org/A060867 ~ 0.25 1/4
+
+1/21 7:42 PM found the polynomial :D
+**(4 * 4^n - 2^n)^2 - (2^n - 1)^2**
+
+9       = 3^2    - i^2
+195     = 14^2   - 1^2
+3591    = 60^2   - 3^2
+61455   = 248^2  - 7^2
+1015839 = 1008^2 - 15^2
 
    1/0
 0.5 1 0.5
