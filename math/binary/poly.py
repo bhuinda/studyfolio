@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
 
+
+
 def g_product(start, end):
     e_terms = [(4 * 4**n - 2**n)**2 - (2**n - 1)**2 for n in range(start, end + 1)]
     e_logs  = [math.log(e) for e in e_terms]
@@ -19,9 +21,9 @@ def g_period(n):
         end   = start + 4
 
         period = g_product(start, end)
-        periods.append(period)
+        periods.append(math.floor(period))
 
-        print(f"π/2 ({start} to {end}): {period:.5f}")
+        print(f"{period:.0f}")
 
     return periods
 
@@ -87,15 +89,15 @@ def plot_box_plot(pi_values):
     plt.show()
 
 def main():
-    periods = 300
+    periods = 100
     print("Generating results for π/2 terms...")
     pi_values = g_period(periods)
 
-    plot_natural_logs(pi_values)
-    plot_histogram(pi_values)
-    plot_derivative(pi_values)
-    plot_cumulative_sum(pi_values)
-    plot_box_plot(pi_values)
+    # plot_natural_logs(pi_values)
+    # plot_histogram(pi_values)
+    # plot_derivative(pi_values)
+    # plot_cumulative_sum(pi_values)
+    # plot_box_plot(pi_values)
 
 if __name__ == "__main__":
     main()

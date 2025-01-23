@@ -2,8 +2,93 @@ This is the integer version of pi nested inside the natural logarithm???
 393436484784067725
 "imagine base 10 without 1"
 
+3:01 PM 1/22
+pay attention to gamma!!
+
+https://en.wikipedia.org/wiki/Myriagon
+another interesting relationship with imperfect angles?
+10^4?? "The [AREA] differs from the area of its circumscribed circle by up to 40 parts per billion"
+
+could the zeta function, and the logarithm of the primes, be the numerical action of "error correction" that morphs concave polygons into convex polygons/polytopes? i.e., processing stochastical models, like fractal geometry, into quantitative algebraic geometry?
+
+interpretation for INCLUSIVE 0 in step 0..4
+
+0 38 73 108 144 
+
+179 214 250 285 320
+
+* stopped at 1220 - 900 = 320
+
+128 125 125 125 126 125
+
+
+
+
+If the function is interpreted as having periodicity
+EXCLUSIVE 0 in step 0..4
+
+90
+249
+406
+562
+719
+
+https://oeis.org/A228418
+
+the first period's first and last term match the frequency of primes for the description, "Count of the first 10^n primes which do not contain the digit 6." extending this intuition, in the series...
+
+1, 10
+90, 719
+6696, 60845
+554933, 4742037
+43331008, 392875212
+3573268469, 31207451849
+282765603085, ???
+
+we can generalize that each group of 2 represent the beginning and ending integer of the 5-cycle. observe that in this interpretation, we multiply by ~8.5 from x^0 to y^0; and multiply by ~9 from y^0 to x^1
+
+deeper analysis:
+
+y^n/x^n
+y^n/x^n+1
+
+10/1  = 1.0000000000 (^-1 = 1.0)
+10/90 = 0.1111111111 (^-1 = 9.0)
+
+719/90   = 7.98888888889 (^-1 = 0.12517385257)
+719/6696 = 0.10737753882 (^-1 = 9.31293463143)
+
+60845/6696   = 9.08676821983 (^-1 = 0.11005012737)
+60845/554933 = 0.10964386691 (^-1 = 9.12043717643)
+
+
+4742037/554933   = 8.54524239863 (^-1 = 0.1170241818)
+4742037/43331008 = 0.10943749566 (^-1 = 9.13763599915)
+
+392875212/43331008   = 9.06683758661
+392875212/3573268469 = 0.10994841708 (^-1 = 9.09517414218)
+
+31207451849/3573268469 = 8.73358722406
+
+6696 - 719 * 9 = 225
+
+
 SEQUENCE NOTES
 π/2 (0 to 4): 90.00001
+
+https://oeis.org/A023736
+The numbers are very very close to this expansion
+
+I keep seeing triangle expansions correlating
+
+90 218 343 468 594 719 844 (the function)
+91 217 343 469 595 721 847 https://oeis.org/A132121
++1  -1   0  +1  +1  +2  +3 
+
+970 1095 1220 1346 1471 1596 1722 1847 1972 2098 2223 2348 2474 2599 2724 2850 2975 3100
+140 336 532 728 924 1120 1316, 1512, 204, 492, 780, 1068, 1356, 1644, 1932, 2220, 2508, 285, 690, 1095, 1500, 1905, 2310, 2715, 3120
+
+0, 1, 2, 5, 11, 17, 14, 32, 50, 68, 30, 70, 110, 150, 190, 55, 130, 205, 280, 355, 430, 91, 217, 343, 469, 595, 721, 847, 140, 336, 532, 728, 924, 1120, 1316, 1512, 204, 492, 780, 1068, 1356, 1644, 1932, 2220, 2508, 285, 690, 1095, 1500, 1905, 2310, 2715, 3120
 
 9 0 0 0 0 0 1 shows up a shocking amount in very wonky looking integer series. it is definitely not a trivial coincidence
 
@@ -15,8 +100,49 @@ https://oeis.org/A061896 (51 to 57) *** super intriguing
        90.00001
 192730 900000.1 (46 to 55, then .)
 
+insane cook:
+50098.60816 - 50000 - 90.00001 = 8.6082 <-- golden ratio in disguise
+
+φ^5 = 11.0901 699437
+    = 90.0000 109
+
+90.0000109 / 11.0901699437 = 8.11529592034
+                               115295 (73 to 78) https://oeis.org/A084255
+                               115295 (0 to 6) https://oeis.org/A255655
+
+11.0901699437 / 90.0000109 = 0.12322409556
+https://oeis.org/A029247
+
+11.0901699437 * 90.0000109 = 998.115415816
+998.115415816
+ 981154216904 (starting on 9th) https://oeis.org/A093626
+
+
+12:41 AM: relation to this??? (φ^5)
+https://en.wikipedia.org/wiki/Hard_hexagon_model
+https://en.wikipedia.org/wiki/Rogers%E2%80%93Ramanujan_identities
+
+φ reciprocal = 0.618033988749894848204586834365638
+
 https://en.wikipedia.org/wiki/Fibonacci_polynomials
+
+https://oeis.org/wiki/Lucas_polynomials
 holy christmas tree ("Triangle of coefficients of Lucas polynomials")
+
+L9(x) = 9x + 30x^3 + 27x^5 + 9x^7 + x^9
+
+1/22 8:31 PM woah
+https://en.wikipedia.org/wiki/Metallic_mean
+
+8:46 !!!!
+https://en.wikipedia.org/wiki/Ergodic_theory
+https://swc-math.github.io/aws/2010/2010EinsiedlerNotes.pdf
+part of the intuition I've been developing!! the mathematical way that time enables equiprobability of state, but instantaneously has variability of entropy
+
+https://oeis.org/A261574 a(n) = n*(n^2 + 3)*(n^6 + 6*n^4 + 9*n^2 + 3)
+0, 76, 2786, 46764, 439204, 2744420, 12813606, 48229636, 153992264, 432083484, 1092730090
+
+begins with 2 because of i, 1/2 shenanigans?
 
 2
 1, 0
@@ -28,7 +154,7 @@ holy christmas tree ("Triangle of coefficients of Lucas polynomials")
 1, 6, 9, 2, 0, 0, 0, 0
 1, 7, 14, 7, 0, 0, 0, 0, 0
 1, 8, 20, 16, 2, 0, 0, 0, 0
-1, 9, 27, 30, 9, 0, 0, 0, 0, 0
+1, 9, 27, 30, 9, 0, 0, 0, 0, 0 (11TH ROW)
 1, 10, 35, 50, 25, 2, 0, 0, 0, 0, 0
 1, 11, 44, 77, 55, 11, 0, 0, 0, 0, 0, 0
 1, 12, 54, 112, 105, 36, 2, 0, 0, 0, 0, 0, 0
@@ -38,6 +164,27 @@ holy christmas tree ("Triangle of coefficients of Lucas polynomials")
 1, 16, 104, 352, 660, 672, 336, 64, 2, 0, 0, 0, 0
 1, 17, 119, 442, 935, 1122, 714, 204, 17, 0, 0, 0, 0
 1, 18, 135, 546, 1287, 1782, 1386, 540, 81, 2, 0, 0, 0
+
+
+0
+1, 0
+2, 0, 0
+3, 0, 0, 0
+4, 2, 0, 0, 0
+5, 5, 0, 0, 0, 0
+6, 9, 2, 0, 0, 0, 0
+7, 14, 7, 0, 0, 0, 0, 0
+8, 20, 16, 2, 0, 0, 0, 0
+9, 27, 30, 9, 0, 0, 0, 0, 0 (10TH ROW)
+10, 35, 50, 25, 2, 0, 0, 0, 0, 0
+11, 44, 77, 55, 11, 0, 0, 0, 0, 0, 0
+12, 54, 112, 105, 36, 2, 0, 0, 0, 0, 0, 0
+13, 65, 156, 182, 91, 13, 0, 0, 0, 0, 0, 0
+14, 77, 210, 294, 196, 49, 2, 0, 0, 0, 0, 0
+15, 90, 275, 450, 378, 140, 15, 0, 0, 0, 0, 0
+16, 104, 352, 660, 672, 336, 64, 2, 0, 0, 0, 0
+17, 119, 442, 935, 1122, 714, 204, 17, 0, 0, 0, 0
+18, 135, 546, 1287, 1782, 1386, 540, 81, 2, 0, 0, 0
 
 π/2 (990 to 994): 3111129990 (decimal omitted)
                   3111129998 https://oeis.org/A152545
@@ -310,6 +457,30 @@ i * i = -1
 3 * 3 = +4
 7 * 7 = +8
 weird. try again:
+
+PRIMAL CATEGORY
+0modi^1 = 0
+1modi^1 = i^1
+2modi^1 = i^2
+
+POLAR CATEGORY
+0modi^2 = 0
+1modi^2 = i^2 = -1 (division; negation)
+2modi^2 = i^4 = +1 (multiplication; addition)
+
+NATURAL??? CATEGORY (module with no notion of 0)
+0modi^3 = i^1
+1modi^3 = i^2
+2modi^3 = i^3
+3modi^3 = i^0
+
+0modi^4
+1modi^4
+2modi^4
+3modi^4
+4modi^4
+
+
 i  =  imod2 (self-destructing dual)
 1  =  1mod2
 3  =  3mod4
