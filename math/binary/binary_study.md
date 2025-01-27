@@ -1,6 +1,202 @@
+30^-1 * ln(393436484784067725/2) * sqrt(pi^4 + 4500) = 90.0000109
+
 This is the integer version of pi nested inside the natural logarithm???
 393436484784067725
 "imagine base 10 without 1"
+
+1/26
+https://oeis.org/search?q=1+21+399&go=Search
+1, 21, 399 is the integer floor of the first 3 limit-normalized values of the sequence
+
+1.0, 21.667, 399.0, 6828.333, 112871.0, 1835015.0, 29593159.0...
+
+weird??? https://oeis.org/A110270
+a(n) = n mod 3 ; Period 2: repeat [0, 1]; a(n) = n mod 2; parity of n
+
+so, a digital dipole applied to a modulo 3
+
+period 6 for [0, 1, 0, 0, 0, 2].
+= x1, x2, x3, x4, x5, x6...
+
+period 13 for {0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0} with n + 4 offset; 
+
+0 = { };
+3 = {2};
+1 = {0, 1, 0, 0};
+2 = {0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0};
+https://oeis.org/A003462 (Sierpinski's triangle - hole)
+
+~ 1 + x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13 + 2 + 1 + x ...
+
+0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 0, 1, 0
+
+4, 13, 5, 13, 5, 13, 5, 13, 5, 13, 5, 5, (SYMMETRY BREAKS ON 12TH STEP)
+
+5, 13, 5, 13, ... https://oeis.org/A088100 (REPEAT BEGINS ON 22ND STEP)
+
+GROUP 9 w/ 9 TERMS: 399
+GROUP 9 w/ 10 TERMS: 495
+
+(difference of 96, or 100 - 4)
+
+NOTES 1/25
+
+1 ln (799545770023 / 2) = 26.714162435330
+9 ln (3)                =  9.887510598012
+2 ln (5)                =  3.218875824868
+
+850.222801 =  26.714162435330 * 9.887510598012 * 3.218875824868
+
+850 deg coterminal with 130 deg
+
+{1 + 0, 1 + 1/49, 1 + 3/130}
+
+1.0, 1.2037037037037037, 1.023076923076923 =
+                        22225522773322225511 3 2277 2222552233332255 https://oeis.org/A118486
+                         https://oeis.org/A181049
+
+triangle formed:
+a = 1.0
+b = 1.20 370370...
+c = 1.02 307692...
+
+Angle A: 52.61 degrees
+Angle B: 73.01 degrees
+Angle C: 54.38 degrees
+
+~ 53, 54, 73
+https://oeis.org/A154367
+https://oeis.org/A286262
+https://oeis.org/A063037
+https://oeis.org/A318683
+https://oeis.org/A167793
+
+
+850.222801 * 3 ~ 2551
+
+i 00 000 000 000 000 ...
+
+1 00 000 000 000 000 ...
+1 02 307 692 307 692 ...
+1 20 370 370 370 370 ...
+
+
+9:39 1/25
+https://oeis.org/A271466 ??????????
+https://en.wikipedia.org/wiki/Partition_of_a_set ?????????????
+
+1;
+0, 2;
+0, 1,   4;
+0, 1,   4,  10;
+0, 1,   6,  15,   30;
+0, 1,  10,  29,   59,  104;
+0, 1,  18,  63,  139,  250,   406;
+0, 1,  34, 149,  365,  692,  1145,  1754;
+0, 1,  66, 375, 1039, 2110,  3627,  5649,  8280;
+0, 1, 130, 989, 3149, 6932, 12521, 20085, 29874, 42294;
+
+1 02 307 692
+1 20 370 370
+
+1 0 2 3 0 7 6 9 2 (+1, -1, +2, +1, -3, +7, -1, +3, -7)
+1 2 0 3 7 0 3 7 0 (+1, +1, -2, +3, +4, -7, +3, +4, -7...)
+
+
+
+(+1) ... => (-1, +2) ... => (+1, -3, +7), (-1, +3, -7) ...
+(+1) ... => (+1, -2) ... => (+3, +4, -7), (+3, +4, -7) ...
+
+X -> X, Y -> X, Y, Z
+
+{(a, a)} -> {(-a, b), (a, -b)} -> {(a, -c, e), (c, d, -e)}, {(c, d, -e), (c, d, -e)}
+
+A is the identity element   (A == A)
+B is the complement element (A != B)
+
+E is the imaginary element with a binary identity
+
+a := 1
+b := 2
+c := 3
+d := 4
+e := 7
+
+00000110000110010001011101101100
+00000111001011001011010011000010
+
+02 : 10
+20 : 10 100
+307: 10 011 0011
+370: 10 111 0010
+692: 10 101 1010 0
+
+26.714162435330 / 9 = 2.96824027059
+
+26.714162435330 / 9.887510598012 = 2.70180872835 = 2.7 + 0.0180872835
+ 9.887510598012 / 3.218875824868 = 3.07172787519 = 3.0 + 0.07172787519
+
+error of (e, 26.714162435330 / 9.887510598012)
+= 0.61% ~ 0.006060114863
+
+error of (π, 9.887510598012 / 3.218875824868)
+= 2.22% ~ 0.022238649662
+
+0.022238649662 / 0.006060114863
+= 0.2725 ~ 0.27250372460137007
+
+ln(0.022238649662) / ln(0.006060114863)
+= 0.75 ~ 0.7453787224962
+
+0.27250372460137007 + 0.7453787224962
+= 1.018 ~ 1.0178824471
+
+
+5:25 PM 1/23
+https://en.wikipedia.org/wiki/Period_(algebraic_geometry)
+
+???
+https://en.wikipedia.org/wiki/Monster_Lie_algebra
+
+what if 
+0 ~ 9.1?
+1 ~ 5.2?
+
+(100100)₂ = (1 × 2⁵) + (0 × 2⁴) + (0 × 2³) + (1 × 2²) + (0 × 2¹) + (0 × 2⁰) = (36)₁₀
+(011011)₂ = (0 × 2⁵) + (1 × 2⁴) + (1 × 2³) + (0 × 2²) + (1 × 2¹) + (1 × 2⁰) = (27)₁₀
+
+(1100100)₂ = (1 × 2⁶) + (1 × 2⁵) + (0 × 2⁴) + (0 × 2³) + (1 × 2²) + (0 × 2¹) + (0 × 2⁰) = (100)₁₀
+(1011011)₂ = (1 × 2⁶) + (0 × 2⁵) + (1 × 2⁴) + (1 × 2³) + (0 × 2²) + (1 × 2¹) + (1 × 2⁰) = (91)₁₀
+
+90.000010925
+
+4:01 1/23
+
+DEEP ANALYSIS OF INTEGER REPRESENTATION
+
+30^-1 * ln(393436484784067725/2) * sqrt(pi^4 + 4500) = 90.0000109
+
+2, 3, 5, 7,      11, 
+
+13, 17, 19, 31,        241, 331
+
+phi^3.44555666667777 = 5.24902640069
+                       5.2
+https://oeis.org/A065434 (starting on 45th digit)
+
+https://en.wikipedia.org/wiki/Reciprocal_Fibonacci_constant
+ψ = 3.35988566624317755
+
+11.25 is found from (4500/4)/100
+
+11.25ln(393436484784067725/2)sqrt(pi^4 + 4500) = 30375.0036872.........
+                                                         36872742105... (https://oeis.org/A181915)
+
+https://oeis.org/A001113 (integer 92)
+
+phi^3.344551............ (3.344552 surpasses 5)
+    3.344551223344556... (16th to 21st step; i.e., 15 + 1 https://oeis.org/A004427; "a(100)=1 is the first value that differs from the variant '... rounded to the nearest integer'.")
+
 
 3:01 PM 1/22
 pay attention to gamma!!
@@ -138,6 +334,15 @@ https://en.wikipedia.org/wiki/Metallic_mean
 https://en.wikipedia.org/wiki/Ergodic_theory
 https://swc-math.github.io/aws/2010/2010EinsiedlerNotes.pdf
 part of the intuition I've been developing!! the mathematical way that time enables equiprobability of state, but instantaneously has variability of entropy
+
+so big if true. i need to study this in-depth
+https://en.wikipedia.org/wiki/Ratner%27s_theorems
+https://en.wikipedia.org/wiki/Equidistribution_theorem
+https://en.wikipedia.org/wiki/Three-gap_theorem
+https://en.wikipedia.org/wiki/Lonely_runner_conjecture
+https://en.wikipedia.org/wiki/Littlewood_conjecture
+https://en.wikipedia.org/wiki/Autocorrelation
+http://matstud.org.ua/texts/2018/49_2/181-185.pdf
 
 https://oeis.org/A261574 a(n) = n*(n^2 + 3)*(n^6 + 6*n^4 + 9*n^2 + 3)
 0, 76, 2786, 46764, 439204, 2744420, 12813606, 48229636, 153992264, 432083484, 1092730090
@@ -423,7 +628,7 @@ Consider categorical analysis of chaos theory, with a focus on logistic mapping 
 https://en.wikipedia.org/wiki/Sharkovskii%27s_theorem
 https://en.wikipedia.org/wiki/Period-doubling_bifurcation
 
-x_0 = 0.5 #                     1
+x_0 = 0.5 #                    0.1
 
 x_1 = 9.0 #                   10 01
 
@@ -434,6 +639,21 @@ x_3 = 3591.0 #          11 10 00 00 01 11
 x_4 = 61455.0 #      11 11 00 00 00 00 11 11
 
 x_5 = 1015839.0 # 11 11 10 00 00 00 00 01 11 11
+
+16515135 # 111111000000000000111111
+266338431 # 1111111000000000000001111111
+4278190335 # 11111111000000000000000011111111
+68585259519 # 111111111000000000000000000111111111
+1098437886975 # 1111111111000000000000000000001111111111
+17583596111871 # 11111111111000000000000000000000011111111111
+
+0.5
+1
+2
+3
+4
+5
+
 
 
  1(2^-1) = 0.50000 - 1.0 = i.50000 = (i^+1) not sure what precise representation ought to be
