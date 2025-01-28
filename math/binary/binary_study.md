@@ -1,8 +1,79 @@
-30^-1 * ln(393436484784067725/2) * sqrt(pi^4 + 4500) = 90.0000109
+SIGNAL OF 393436484784067725 |S| = 90
+
+7:52 PM 1/27
+Fourier transform reconstruction starts converging on frequency 56; converges on 59.
+
+https://metanumbers.com/59
+https://oeis.org/A127064 mod group of 2 to 9
+https://oeis.org/A111903 height and volume of 59 tetrahedron
+
+Peaks in Autocorrelation: [ 2  4  8 10 12 14 16 22 24 26 30 35 37 46 50 56]
+Periods from Autocorrelation: [2 4 2 2 2 2 6 2 2 
+4 5 2 9 4 6]
+Peaks in Fourier Transform: [ 2  4  6 11 13 17 19 22 24 27]
+Periods from Fourier Transform: [0.5 0.25 0.16666667 0.09090909 0.07692308 0.05882353 0.05263158 0.04545455 0.04166667 0.03703704]
+
+Last period of Fourier transform corresponds with the other terms I found:
+{1 + 0, 1 + 11/54, 1 + 3/130} -> {1 + 0?, 1 + 11/54, 1 + 3/130, 12 + 1/27?}
+                            .... {65/54, 133/130, 325/27}
+                            ...... {65/54, 133/130, 1/27}
+
+30^-1 * ln(393436484784067725 / 2) * sqrt(5 * 30^2 + pi^4) = 90.0000109
+
+cardinal variant: 3^-1 * (90 / 2) * sqrt(5 * 3^2 + pi^4) = 179.00292
+
+12:09 1/27 ???????????????
+
+30^-1 * ln(393436484784067725 / 2) * sqrt(5 * 30^2 + pi^4)
+= 90.0000109249649224519426614644484681678187252910011861186891051780624419299...
+
+6^-1 * (90 / 2) * sqrt(5 * 3^2 + pi^4) + 0.5
+= 90.001460159388668459402902927383557491063372423072926882673462010513783...
+
+difference of 2nd period https://oeis.org/search?q=2+6+0+2+7+5&go=Search
+
+1^-1 * 15 * sqrt(5 * 3^2 + pi^4) + 1 ||
+3^-1 * 45 * sqrt(5 * 3^2 + pi^4) + 1 ||
+6^-1 * 90 * sqrt(5 * 3^2 + pi^4) + 1 ||
+1 + 15 sqrt(45 + π^4)
+= 180.002920318777336918805805854767114982126744846145853765346924021027565420...
+
+1 + 1 sqrt(3 + π^4)
+= 11.0204336749465308377203281941482548344626177236395597034910453746072200674...
+
+45 * sqrt(5/2 + (pi^2)/6) ??????
+
+https://oeis.org/search?q=59%2c61%2c64%2c68%2c78%2c80%2c83%20id:104814
+
+vaguely related
+89641486622025
+3^8 × 5^2 × 13 × 17 × 31 × 241 × 331
+sum of digits = 63; number is in the trillions
+
+393436484784067725
+sum of digits = 90; number is in the quintillions
+3^9 * 5^2 * 7 * 11 * 13 * 17 * 19 * 31 * 241 * 331
+
+https://oeis.org/A045924
+https://oeis.org/search?q=2%2C+3%2C+4%2C+10%2C+2%2C+3&go=Search
+2 * log2(89641486622025) - phi^2
+
+63/90 reduces to 7/10
+
+0.00289846877
+
+11:04 PM 1/26
+https://metanumbers.com/393436484784067725
+just noticed that its integers sum to 90...... wtf......
+
+393436484784067725 / 8778 = 44820743311012.5
+                          = 44820743311012.5(2) = 
+240:1 divisors
+64152:1 Carmichael Lambda
 
 This is the integer version of pi nested inside the natural logarithm???
-393436484784067725
-"imagine base 10 without 1"
+393436484784067725/2 
+"imagine pi as a base-less representation"
 
 1/26
 https://oeis.org/search?q=1+21+399&go=Search
@@ -10,10 +81,22 @@ https://oeis.org/search?q=1+21+399&go=Search
 
 1.0, 21.667, 399.0, 6828.333, 112871.0, 1835015.0, 29593159.0...
 
+below may be related to logistic map
+consider the bifurcation values:
+
+n=1 : p=2 ; a(n)=3
+n=2 : p=4 ; a(n)=3.4494897
+*** somehow related to https://oeis.org/A110270 pattern?
+
+for 1, 22, 399 (integer ceiling) https://oeis.org/A049663 
+22 * 399 = 8778 https://metanumbers.com/8778 <-- 230, 720, 2^5 divisors ... lambda of 90...
+93.690981422974 - 91.536877814354 = 2.15410360862 (difference of geometric means from above)
+                                  = 2-15410 https://oeis.org/A289922
+
 weird??? https://oeis.org/A110270
 a(n) = n mod 3 ; Period 2: repeat [0, 1]; a(n) = n mod 2; parity of n
 
-so, a digital dipole applied to a modulo 3
+so, a digital dipole that multiplicatively acts on modulo 3
 
 period 6 for [0, 1, 0, 0, 0, 2].
 = x1, x2, x3, x4, x5, x6...
@@ -49,7 +132,12 @@ NOTES 1/25
 
 850 deg coterminal with 130 deg
 
-{1 + 0, 1 + 1/49, 1 + 3/130}
+{1 + 0, 1 + 407/1998, 1 + 3/130}
+
+{1 + 0, 1 + 11/54, 1 + 3/130}
+
+0, 11, 3, 1 = 4th row; or starts on 6 + 1 integer https://oeis.org/A324429
+1, 11, 3, 1 = 8 + 1 integer https://oeis.org/A132199
 
 1.0, 1.2037037037037037, 1.023076923076923 =
                         22225522773322225511 3 2277 2222552233332255 https://oeis.org/A118486
@@ -645,7 +733,21 @@ x_5 = 1015839.0 # 11 11 10 00 00 00 00 01 11 11
 4278190335 # 11111111000000000000000011111111
 68585259519 # 111111111000000000000000000111111111
 1098437886975 # 1111111111000000000000000000001111111111
+
+GROUP 2
+16515135 * 266338431 * 4278190335 * 68585259519 * 1098437886975
+= 1417693531071288485032644754963173958251807549375
+on the order of quindecillion; 49 digits
+
+GROUP 3
+
 17583596111871 # 11111111111000000000000000000000011111111111
+281406257238015 # 111111111111000000000000000000000000111111111111
+4503049871564799 # 1111111111111000000000000000000000000001111111111111
+72053195991433215 # 11111111111111000000000000000000000000000011111111111111
+1152886320234790911 # 111111111111111000000000000000000000000000000111111111111111
+
+= 1850921250575100718492138195560502378525160341424138153082390913443908223563775
 
 0.5
 1
